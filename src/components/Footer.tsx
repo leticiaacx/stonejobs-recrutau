@@ -41,7 +41,7 @@ const Footer = () => {
               asChild
             >
               <a 
-                href="https://wa.me/5511999999999" 
+                href="https://wa.me/5585981725203" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
