@@ -4,23 +4,23 @@ import { Briefcase, GraduationCap, Shield, Zap } from "lucide-react";
 const benefits = [
   {
     icon: Briefcase,
-    title: "Autonomia e Flexibilidade",
-    description: "Gerencie seu tempo e defina suas estratégias de trabalho."
-  },
-  {
-    icon: GraduationCap,
-    title: "Treinamento Completo",
-    description: "Formação inicial e contínua para desenvolver suas habilidades."
+    title: "Salário Fixo + Comissão",
+    description: "Remuneração fixa mensal e comissão variável por performance."
   },
   {
     icon: Shield,
-    title: "Suporte Dedicado",
-    description: "Time Stone sempre disponível para apoiar seu crescimento."
+    title: "Seguro de Vida",
+    description: "Proteção e segurança para você e sua família."
+  },
+  {
+    icon: GraduationCap,
+    title: "Vale Alimentação",
+    description: "Benefício alimentação para seu dia a dia."
   },
   {
     icon: Zap,
-    title: "Tecnologia de Ponta",
-    description: "Ferramentas e sistemas mais avançados do mercado."
+    title: "Vale Combustível",
+    description: "Suporte para suas atividades externas."
   }
 ];
 

@@ -6,9 +6,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 bg-primary rounded flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">S</span>
+            <span className="text-primary-foreground font-bold text-lg">R</span>
           </div>
-          <span className="font-bold text-xl">Stone Franquias - Oportunidades de Carreira</span>
+          <span className="font-bold text-xl">RecrutAÚ - Stone Franquias</span>
         </div>
         
         <div className="hidden md:flex items-center gap-6">

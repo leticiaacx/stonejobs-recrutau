@@ -7,11 +7,10 @@ const jobs = [
     city: "Mãe do Rio, PA",
     franchise: "Franquia de São Miguel do Guamá",
     position: "Agente Comercial",
-    description: "O coração da nossa operação. Você será responsável por levar as soluções Stone aos empreendedores locais, construindo relacionamentos e impulsionando negócios.",
+    description: "Leve soluções financeiras aos lojistas, trabalhando nas ruas e apresentando uma nova realidade empreendedora. Atue na prospecção, gestão de carteira e entrega de atendimento de excelência.",
     requirements: [
-      "Experiência em vendas externas",
-      "Paixão por metas",
-      "Foco no cliente"
+      "Ter CNH",
+      "Ensino Superior completo ou cursando (desejável)"
     ],
     link: "https://saomiguel.rhinoagencia.com.br/vagas"
   },
@@ -19,25 +18,78 @@ const jobs = [
     city: "Santarém, PA",
     franchise: "Franquia de Santarém",
     position: "Agente Comercial",
-    description: "O coração da nossa operação. Você será responsável por levar as soluções Stone aos empreendedores locais, construindo relacionamentos e impulsionando negócios.",
+    description: "Leve soluções financeiras aos lojistas, trabalhando nas ruas e apresentando uma nova realidade empreendedora. Atue na prospecção, gestão de carteira e entrega de atendimento de excelência.",
     requirements: [
-      "Experiência em vendas externas",
-      "Paixão por metas",
-      "Foco no cliente"
+      "Ter CNH",
+      "Ensino Superior completo ou cursando (desejável)"
     ],
     link: "https://santarem.rhinoagencia.com.br/vagas"
   },
   {
-    city: "Altamira, PA",
-    franchise: "Franquia de Altamira",
-    position: "Agente Comercial",
-    description: "O coração da nossa operação. Você será responsável por levar as soluções Stone aos empreendedores locais, construindo relacionamentos e impulsionando negócios.",
+    city: "Santarém, PA",
+    franchise: "Franquia de Santarém",
+    position: "Operador Logístico",
+    description: "Atenda clientes nos pontos de venda, entregando maquininhas e orientando na utilização. Realize gestão de estoque, logística reversa e treinamentos aos donos de negócios.",
     requirements: [
-      "Experiência em vendas externas",
-      "Paixão por metas",
-      "Foco no cliente"
+      "Disponibilidade para atividades externas",
+      "Organização e gestão de estoque"
     ],
-    link: "https://altamira.rhinoagencia.com.br/vagas"
+    link: "https://santarem.rhinoagencia.com.br/vagas"
+  },
+  {
+    city: "Pacajus, CE",
+    franchise: "Franquia de Pacajus",
+    position: "Operador Logístico",
+    description: "Atenda clientes nos pontos de venda, entregando maquininhas e orientando na utilização. Realize gestão de estoque, logística reversa e treinamentos aos donos de negócios.",
+    requirements: [
+      "Disponibilidade para atividades externas",
+      "Organização e gestão de estoque"
+    ],
+    link: "https://pacajus.rhinoagencia.com.br/vagas"
+  },
+  {
+    city: "Aracati, CE",
+    franchise: "Franquia de Aracati",
+    position: "Agente Comercial",
+    description: "Leve soluções financeiras aos lojistas, trabalhando nas ruas e apresentando uma nova realidade empreendedora. Atue na prospecção, gestão de carteira e entrega de atendimento de excelência.",
+    requirements: [
+      "Ter CNH",
+      "Ensino Superior completo ou cursando (desejável)"
+    ],
+    link: "https://aracati.rhinoagencia.com.br/vagas"
+  },
+  {
+    city: "Uruaçu, GO",
+    franchise: "Franquia de Uruaçu",
+    position: "Agente Comercial",
+    description: "Leve soluções financeiras aos lojistas, trabalhando nas ruas e apresentando uma nova realidade empreendedora. Atue na prospecção, gestão de carteira e entrega de atendimento de excelência.",
+    requirements: [
+      "Ter CNH",
+      "Ensino Superior completo ou cursando (desejável)"
+    ],
+    link: "https://uruacu.rhinoagencia.com.br/vagas"
+  },
+  {
+    city: "Santa Maria de Jetibá, ES",
+    franchise: "Franquia de Santa Maria de Jetibá",
+    position: "Agente Comercial",
+    description: "Leve soluções financeiras aos lojistas, trabalhando nas ruas e apresentando uma nova realidade empreendedora. Atue na prospecção, gestão de carteira e entrega de atendimento de excelência.",
+    requirements: [
+      "Ter CNH",
+      "Ensino Superior completo ou cursando (desejável)"
+    ],
+    link: "https://santamariadojetiba.rhinoagencia.com.br/vagas"
+  },
+  {
+    city: "Santa Maria de Jetibá, ES",
+    franchise: "Franquia de Santa Maria de Jetibá",
+    position: "Operador Logístico",
+    description: "Atenda clientes nos pontos de venda, entregando maquininhas e orientando na utilização. Realize gestão de estoque, logística reversa e treinamentos aos donos de negócios.",
+    requirements: [
+      "Disponibilidade para atividades externas",
+      "Organização e gestão de estoque"
+    ],
+    link: "https://santamariadojetiba.rhinoagencia.com.br/vagas"
   }
 ];
 
