@@ -12,13 +12,13 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-6">
-          <a href="#vagas" className="text-foreground hover:text-primary transition-colors">
+          <a href="/#vagas" className="text-foreground hover:text-primary transition-colors">
             Vagas
           </a>
-          <a href="#cidades" className="text-foreground hover:text-primary transition-colors">
+          <a href="/cidades" className="text-foreground hover:text-primary transition-colors">
             Cidades
           </a>
-          <a href="#beneficios" className="text-foreground hover:text-primary transition-colors">
+          <a href="/#beneficios" className="text-foreground hover:text-primary transition-colors">
             Por que Stone?
           </a>
         </div>
