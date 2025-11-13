@@ -173,6 +173,9 @@ const jobsByCity = {
 };
 
 const CitiesJobListings = () => {
+  const hash = window.location.hash.replace('#', '');
+  const defaultCity = hash || "mae-do-rio";
+
   return (
     <section id="cidades" className="py-20 px-4 bg-background">
       <div className="container mx-auto">
@@ -181,7 +184,7 @@ const CitiesJobListings = () => {
           Selecione sua cidade e confira as oportunidades disponíveis
         </p>
 
-        <Tabs defaultValue="mae-do-rio" className="w-full">
+        <Tabs value={defaultCity} className="w-full">
           <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full mb-8 h-auto gap-2">
             <TabsTrigger value="mae-do-rio">Mãe do Rio/PA</TabsTrigger>
             <TabsTrigger value="santarem">Santarém/PA</TabsTrigger>
