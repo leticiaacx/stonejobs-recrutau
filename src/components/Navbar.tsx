@@ -15,6 +15,9 @@ const Navbar = () => {
           <a href="#vagas" className="text-foreground hover:text-primary transition-colors">
             Vagas
           </a>
+          <a href="#cidades" className="text-foreground hover:text-primary transition-colors">
+            Cidades
+          </a>
           <a href="#beneficios" className="text-foreground hover:text-primary transition-colors">
             Por que Stone?
           </a>
