@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Briefcase, ExternalLink } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const jobsByCity = {
   "mae-do-rio": [
@@ -78,7 +79,7 @@ const jobsByCity = {
       city: "Pacajus",
       state: "CE",
       franchise: "Pacajus",
-      position: "Agente Comercial",
+      position: "Operador Logístico",
       description: "Responsável por prospectar novos clientes, realizar vendas de máquinas de cartão e serviços Stone, e manter relacionamento com os clientes.",
       activities: [
         "Prospecção ativa de novos clientes",
@@ -168,12 +169,45 @@ const jobsByCity = {
       ],
       link: "https://jetiba.rhinoagencia.com.br/vagas"
     }
+  ],
+  "quixeramobim": [
+    {
+      city: "Quixeramobim",
+      state: "CE",
+      franchise: "Quixadá",
+      position: "Agente Comercial",
+      description: "Responsável por prospectar novos clientes, realizar vendas de máquinas de cartão e serviços Stone, e manter relacionamento com os clientes.",
+      activities: [
+        "Prospecção ativa de novos clientes",
+        "Apresentação de produtos e serviços Stone",
+        "Fechamento de vendas",
+        "Suporte e atendimento ao cliente",
+        "Alcance de metas comerciais"
+      ],
+      requirements: [
+        "Ensino médio completo",
+        "Experiência com vendas (desejável)",
+        "Boa comunicação",
+        "Proatividade e dinamismo",
+        "CNH categoria B (desejável)"
+      ],
+      link: "https://quixada.rhinoagencia.com.br/vagas"
+    }
   ]
 };
 
 const CitiesJobListings = () => {
-  const hash = window.location.hash.replace('#', '');
-  const selectedCity = hash || "mae-do-rio";
+  const [selectedCity, setSelectedCity] = useState<string>(() => window.location.hash.replace('#', '') || "mae-do-rio");
+  
+  useEffect(() => {
+    const onHashChange = () => {
+      const next = window.location.hash.replace('#', '') || "mae-do-rio";
+      setSelectedCity(next);
+    };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+  
   const jobs = jobsByCity[selectedCity as keyof typeof jobsByCity] || [];
   
   const cityNames: Record<string, string> = {
@@ -182,7 +216,8 @@ const CitiesJobListings = () => {
     "pacajus": "Pacajus/CE",
     "aracati": "Aracati/CE",
     "uruacu": "Uruaçu/GO",
-    "santa-maria": "Santa Maria de Jetibá/ES"
+    "santa-maria": "Santa Maria de Jetibá/ES",
+    "quixeramobim": "Quixeramobim/CE"
   };
 
   return (
@@ -191,9 +226,24 @@ const CitiesJobListings = () => {
         <h2 className="text-4xl font-bold text-center mb-4">
           Vagas em {cityNames[selectedCity] || ""}
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
           Confira as oportunidades disponíveis
         </p>
+
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {Object.entries(cityNames).map(([key, label]) => (
+            <Button
+              key={key}
+              variant={key === selectedCity ? "default" : "outline"}
+              size="sm"
+              onClick={() => {
+                window.location.hash = key;
+              }}
+            >
+              {label}
+            </Button>
+          ))}
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {jobs.map((job, index) => (
