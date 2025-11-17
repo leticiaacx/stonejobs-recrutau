@@ -80,19 +80,19 @@ const jobsByCity = {
       state: "CE",
       franchise: "Pacajus",
       position: "Operador Logístico",
-      description: "Responsável por prospectar novos clientes, realizar vendas de máquinas de cartão e serviços Stone, e manter relacionamento com os clientes.",
+      description: "Responsável pela gestão de estoque, organização do almoxarifado, controle de entregas e recebimentos de equipamentos e materiais.",
       activities: [
-        "Prospecção ativa de novos clientes",
-        "Apresentação de produtos e serviços Stone",
-        "Fechamento de vendas",
-        "Suporte e atendimento ao cliente",
-        "Alcance de metas comerciais"
+        "Recebimento e conferência de mercadorias",
+        "Organização do estoque",
+        "Separação e preparação de pedidos",
+        "Controle de entrada e saída de materiais",
+        "Apoio nas entregas quando necessário"
       ],
       requirements: [
         "Ensino médio completo",
-        "Experiência com vendas (desejável)",
-        "Boa comunicação",
-        "Proatividade e dinamismo",
+        "Experiência com entregas (desejável)",
+        "Organização",
+        "Atenção aos detalhes",
         "CNH categoria B (desejável)"
       ],
       link: "https://pacajus.rhinoagencia.com.br/vagas"
@@ -197,7 +197,15 @@ const jobsByCity = {
 };
 
 const CitiesJobListings = () => {
-  const [selectedCity, setSelectedCity] = useState<string>(() => window.location.hash.replace('#', '') || "mae-do-rio");
+  const [selectedCity, setSelectedCity] = useState<string>("mae-do-rio");
+  
+  useEffect(() => {
+    // Set initial hash on mount
+    const hash = window.location.hash.replace('#', '');
+    if (hash && jobsByCity[hash as keyof typeof jobsByCity]) {
+      setSelectedCity(hash);
+    }
+  }, []);
   
   useEffect(() => {
     const onHashChange = () => {
