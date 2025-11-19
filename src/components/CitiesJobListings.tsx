@@ -290,7 +290,7 @@ const CitiesJobListings = () => {
                   className="w-full mt-4" 
                   onClick={() => window.open(job.link, '_blank')}
                 >
-                  Candidatar-se Agora
+                  Clique aqui para se candidatar
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>

@@ -196,7 +196,7 @@ const JobListings = () => {
                 
                 <Button className="w-full" asChild>
                   <a href={job.link} target="_blank" rel="noopener noreferrer">
-                    Candidatar-se Agora
+                    Clique aqui para se candidatar
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
