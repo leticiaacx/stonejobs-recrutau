@@ -63,27 +63,6 @@ const jobs = [
     link: "https://santarem.rhinoagencia.com.br/vagas"
   },
   {
-    city: "Pacajus, CE",
-    franchise: "Franquia de Pacajus",
-    position: "Operador Logístico",
-    description: "O Operador Logístico (Green Angel) atende clientes em seus pontos de venda, entregando maquininhas e ajudando na utilização dos produtos. Faz parte da logística própria da Stone, planejando e gerenciando toda a cadeia logística.",
-    activities: [
-      "Entregar maquininhas aos clientes",
-      "Orientar clientes na utilização dos produtos",
-      "Oferecer treinamento aos donos de negócios",
-      "Gerir estoque e realizar logística reversa",
-      "Organizar e inventariar o estoque",
-      "Fazer ordens de serviço externas"
-    ],
-    requirements: [
-      "Ensino médio completo",
-      "Disponibilidade para atividades externas",
-      "Organização e gestão de estoque",
-      "Experiência com entregas (desejável)"
-    ],
-    link: "https://pacajus.rhinoagencia.com.br/vagas"
-  },
-  {
     city: "Aracati, CE",
     franchise: "Franquia de Aracati",
     position: "Agente Comercial",

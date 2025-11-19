@@ -74,30 +74,6 @@ const jobsByCity = {
       link: "https://santarem.rhinoagencia.com.br/vagas"
     }
   ],
-  "pacajus": [
-    {
-      city: "Pacajus",
-      state: "CE",
-      franchise: "Pacajus",
-      position: "Operador Logístico",
-      description: "Responsável pela gestão de estoque, organização do almoxarifado, controle de entregas e recebimentos de equipamentos e materiais.",
-      activities: [
-        "Recebimento e conferência de mercadorias",
-        "Organização do estoque",
-        "Separação e preparação de pedidos",
-        "Controle de entrada e saída de materiais",
-        "Apoio nas entregas quando necessário"
-      ],
-      requirements: [
-        "Ensino médio completo",
-        "Experiência com entregas (desejável)",
-        "Organização",
-        "Atenção aos detalhes",
-        "CNH categoria B (desejável)"
-      ],
-      link: "https://pacajus.rhinoagencia.com.br/vagas"
-    }
-  ],
   "aracati": [
     {
       city: "Aracati",
@@ -243,7 +219,6 @@ const CitiesJobListings = () => {
   const cityNames: Record<string, string> = {
     "mae-do-rio": "Mãe do Rio/PA",
     "santarem": "Santarém/PA",
-    "pacajus": "Pacajus/CE",
     "aracati": "Aracati/CE",
     "uruacu": "Uruaçu/GO",
     "santa-maria": "Santa Maria de Jetibá/ES",
