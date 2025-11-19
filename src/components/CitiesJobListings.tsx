@@ -167,7 +167,7 @@ const jobsByCity = {
         "Proatividade e dinamismo",
         "CNH categoria B (desejável)"
       ],
-      link: "https://jetiba.rhinoagencia.com.br/vagas"
+      link: "https://forms.clickup.com/9013148012/f/8ckkebc-63493/BT6UB8BH2HU4GKYLVS"
     },
     {
       city: "Santa Maria de Jetibá",
@@ -189,7 +189,7 @@ const jobsByCity = {
         "Atenção aos detalhes",
         "CNH categoria B (desejável)"
       ],
-      link: "https://jetiba.rhinoagencia.com.br/vagas"
+      link: "https://forms.clickup.com/9013148012/f/8ckkebc-63493/BT6UB8BH2HU4GKYLVS"
     }
   ],
   "quixeramobim": [
