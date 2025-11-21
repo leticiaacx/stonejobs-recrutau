@@ -293,6 +293,7 @@ const CitiesJobListings = () => {
                     <li className="text-sm">Comissão competitiva</li>
                     <li className="text-sm">Auxilio Alimentação</li>
                     <li className="text-sm">Auxilio Mobilidade</li>
+                    <li className="text-sm">Seguro de Vida</li>
                   </ul>
                 </div>
 
