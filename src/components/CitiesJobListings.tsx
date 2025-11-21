@@ -286,6 +286,16 @@ const CitiesJobListings = () => {
                   </ul>
                 </div>
 
+                <div>
+                  <h4 className="font-semibold mb-2 text-foreground">Benefícios e Vantagens:</h4>
+                  <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                    <li className="text-sm">Salário Fixo</li>
+                    <li className="text-sm">Comissão competitiva</li>
+                    <li className="text-sm">Auxilio Alimentação</li>
+                    <li className="text-sm">Auxilio Mobilidade</li>
+                  </ul>
+                </div>
+
                 <Button 
                   className="w-full mt-4" 
                   onClick={() => window.open(job.link, '_blank')}
